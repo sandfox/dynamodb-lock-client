@@ -2,13 +2,13 @@
 
 _Stability: 1 - [Experimental](https://github.com/tristanls/stability-index#stability-1---experimental)_
 
-[![NPM version](https://badge.fury.io/js/dynamodb-lock-client.png)](http://npmjs.org/package/dynamodb-lock-client)
+[![NPM version](https://badge.fury.io/js/%40sandfox%2dynamodb-lock-client.svg)](https://www.npmjs.com/package/@sandfox/rollbar)
 
 A general purpose distributed locking library with fencing tokens built for AWS DynamoDB.
 
 ## Contributors
 
-[@tristanls](https://github.com/tristanls), [@Jacob-Lynch](https://github.com/Jacob-Lynch)
+Forked from [tristanls/dynamodb-lock-client](https://github.com/tristanls/dynamodb-lock-client) by [@tristanls](https://github.com/tristanls) and [@Jacob-Lynch](https://github.com/Jacob-Lynch).
 
 ## Contents
 
@@ -21,7 +21,7 @@ A general purpose distributed locking library with fencing tokens built for AWS 
 
 ## Installation
 
-    npm install dynamodb-lock-client
+    npm install @sandfox/dynamodb-lock-client
 
 ## Usage
 
@@ -33,7 +33,7 @@ To run the below example, run:
 "use strict";
 
 const AWS = require("aws-sdk");
-const DynamoDBLockClient = require("../index.js");
+const DynamoDBLockClient = require("@sandfox/dynamodb-lock-client");
 
 const dynamodb = new AWS.DynamoDB.DocumentClient(
     {
